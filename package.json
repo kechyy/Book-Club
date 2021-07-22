@@ -1,0 +1,18 @@
+{
+  "name": "Korapay-Book-Club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 8081"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.5.0"
+  }
+}

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korapay Book Club</title>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./assets/images/responsive-logo.svg" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/flickity.min.css">
+</head>
+<body>
+  <!-- Header Component -->
+  <header-component 
+    logo="./assets/images/logo.svg"
+    search="./assets/icons/search.svg"
+    library="./assets/icons/libraries.svg"
+    notification="./assets/icons/notifications.svg"
+    avatar="./assets/images/avatar.svg"
+    logoResponsive="./assets/images/responsive-logo.svg"
+    badge="./assets/icons/badge.svg"
+    back="./assets/icons/back.svg">
+  
+    <div slot="hamburger">
+      <hamburger-component hamburger="./assets/icons/hamburger.svg">
+      </hamburger-component>
+    </div>
+  </header-component>
+  <!-- Header component end-->
+
+  <!-- Main app Component -->
+  <app-component 
+  right="./assets/icons/right.svg"
+  left="./assets/icons/left.svg"
+  imageSlide1 = "./assets/images/slider-images/big-magic.svg"
+  imageSlide2 = "./assets/images/slider-images/effective-python.svg"
+  imageSlide3 = "./assets/images/slider-images/last.svg"
+  imageSlide4 = "./assets/images/slider-images/learn.svg"
+  imageSlide5 = "./assets/images/slider-images/effective-eng.svg">
+    <div slot="book1">
+      <book-card-component
+        book = "./assets/images/book-covers/effective-engineer.svg">
+        <ul slot="book-info">
+          <li>Available</li>
+          <li class="book-title">The Effective Engineer</li>
+          <li>Edmond Lau - 2009</li>
+          <li>Motivational</li>
+          <li>
+            <ul class="ratings" slot="book-info">
+              <li>
+                <p>Ratings: 4.0</p>
+                <p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star unchecked"></span>
+                  <span class="fa fa-star unchecked"></span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="fa fa-users"></span> &nbsp; &nbsp;
+                  <span class="fa fa-heart-o"></span>
+                </p>
+                <p>31 &nbsp; &nbsp; 29</p>
+              </li>
+            </ul>
+          </li>
+        </li>
+      
+      </book-card-component>
+    </div>
+
+    <div slot="book2">
+      <book-card-component
+         book = "./assets/images/book-covers/built-to-last.svg">
+          <ul slot="book-info">
+            <li>Available</li>
+            <li class="book-title">Built To Last</li>
+            <li>Edmond Lau - 2009</li>
+            <li>Motivational</li>
+            <li>
+                <ul class="ratings" slot="book-info">
+                  <li>
+                    <p>Ratings: 4.0</p>
+                    <p>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star unchecked"></span>
+                      <span class="fa fa-star unchecked"></span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span class="fa fa-users"></span> &nbsp; &nbsp;
+                      <span class="fa fa-heart-o"></span>
+                    </p>
+                    <p>31 &nbsp; &nbsp; 29</p>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+      </book-card-component>
+    </div>
+
+    <div slot="book3">
+      <book-card-component book="./assets/images/book-covers/the-lean-starup.svg">
+        <ul slot="book-info">
+          <li>Available</li>
+          <li class="book-title">The Lean Startup</li>
+          <li>Edmond Lau - 2009</li>
+          <li>Motivational</li>
+          <li>
+              <ul class="ratings" slot="book-info">
+                <li>
+                  <p>Ratings: 4.0</p>
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="fa fa-users"></span> &nbsp; &nbsp;
+                    <span class="fa fa-heart-o"></span>
+                  </p>
+                  <p>31 &nbsp; &nbsp; 29</p>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </book-card-component>
+    </div>
+    <div slot="book4">
+      <book-card-component
+        book = "./assets/images/book-covers/effective-python.svg">
+        <ul slot="book-info">
+          <li>Available</li>
+          <li class="book-title"> Effective Python</li>
+          <li>Edmond Lau - 2009</li>
+          <li>Motivational</li>
+          <li>
+              <ul class="ratings" slot="book-info">
+                <li>
+                  <p>Ratings: 4.0</p>
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="fa fa-users"></span> &nbsp; &nbsp;
+                    <span class="fa fa-heart-o"></span>
+                  </p>
+                  <p>31 &nbsp; &nbsp; 29</p>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </book-card-component>
+    </div>
+
+    <div slot="book5">
+      <book-card-component book="./assets/images/book-covers/big-magic.svg">
+        <ul slot="book-info">
+          <li>Available</li>
+          <li class="book-title">Big Magic</li>
+          <li>Edmond Lau - 2009</li>
+          <li>Motivational</li>
+          <li>
+              <ul class="ratings" slot="book-info">
+                <li>
+                  <p>Ratings: 4.0</p>
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="fa fa-users"></span> &nbsp; &nbsp;
+                    <span class="fa fa-heart-o"></span>
+                  </p>
+                  <p>31 &nbsp; &nbsp; 29</p>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </book-card-component>
+    </div>
+    <div slot="book6">
+      <book-card-component book="./assets/images/book-covers/big-magic.svg">
+        <ul slot="book-info">
+          <li>Available</li>
+          <li class="book-title">The Effective Engineer</li>
+          <li>Edmond Lau - 2009</li>
+          <li>Motivational</li>
+          <li>
+              <ul class="ratings" slot="book-info">
+                <li>
+                  <p>Ratings: 4.0</p>
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="fa fa-users"></span> &nbsp; &nbsp;
+                    <span class="fa fa-heart-o"></span>
+                  </p>
+                  <p>31 &nbsp; &nbsp; 29</p>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </book-card-component>
+    </div>
+
+    <div slot="book7">
+      <book-card-component book="./assets/images/book-covers/the-lean-starup.svg">
+        <ul slot="book-info">
+          <li>Available</li>
+          <li class="book-title">The Effective Engineer</li>
+          <li>Edmond Lau - 2009</li>
+          <li>Motivational</li>
+          <li>
+              <ul class="ratings" slot="book-info">
+                <li>
+                  <p>Ratings: 4.0</p>
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="fa fa-users"></span> &nbsp; &nbsp;
+                    <span class="fa fa-heart-o"></span>
+                  </p>
+                  <p>31 &nbsp; &nbsp; 29</p>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </book-card-component>
+    </div>
+    
+    <div slot="book8">
+      <book-card-component book="./assets/images/book-covers/built-to-last.svg">
+        <ul slot="book-info">
+          <li>Available</li>
+          <li class="book-title">The Effective Engineer</li>
+          <li>Edmond Lau - 2009</li>
+          <li>Motivational</li>
+          <li>
+              <ul class="ratings" slot="book-info">
+                <li>
+                  <p>Ratings: 4.0</p>
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="fa fa-users"></span> &nbsp; &nbsp;
+                    <span class="fa fa-heart-o"></span>
+                  </p>
+                  <p>31 &nbsp; &nbsp; 29</p>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </book-card-component>
+    </div>
+    <div slot="book9">
+      <book-card-component book="./assets/images/book-covers/the-lean-starup.svg">
+        <ul slot="book-info">
+          <li>Available</li>
+          <li class="book-title">The Effective Engineer</li>
+          <li>Edmond Lau - 2009</li>
+          <li>Motivational</li>
+          <li>
+              <ul class="ratings" slot="book-info">
+                <li>
+                  <p>Ratings: 4.0</p>
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="fa fa-users"></span> &nbsp; &nbsp;
+                    <span class="fa fa-heart-o"></span>
+                  </p>
+                  <p>31 &nbsp; &nbsp; 29</p>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </book-card-component>
+    </div>
+
+        <div slot="book10">
+          <book-card-component book="./assets/images/book-covers/built-to-last.svg">
+            <ul slot="book-info">
+              <li>Available</li>
+              <li class="book-title">The Effective Engineer</li>
+              <li>Edmond Lau - 2009</li>
+              <li>Motivational</li>
+              <li>
+                  <ul class="ratings" slot="book-info">
+                    <li>
+                      <p>Ratings: 4.0</p>
+                      <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span class="fa fa-users"></span> &nbsp; &nbsp;
+                        <span class="fa fa-heart-o"></span>
+                      </p>
+                      <p>31 &nbsp; &nbsp; 29</p>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </book-card-component>
+        </div>
+        <div slot="book11">
+          <book-card-component book="./assets/images/book-covers/the-lean-starup.svg">
+            <ul slot="book-info">
+              <li>Available</li>
+              <li class="book-title">The Effective Engineer</li>
+              <li>Edmond Lau - 2009</li>
+              <li>Motivational</li>
+              <li>
+                  <ul class="ratings" slot="book-info">
+                    <li>
+                      <p>Ratings: 4.0</p>
+                      <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span class="fa fa-users"></span> &nbsp; &nbsp;
+                        <span class="fa fa-heart-o"></span>
+                      </p>
+                      <p>31 &nbsp; &nbsp; 29</p>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </book-card-component>
+        </div>
+        <div slot="book12">
+          <book-card-component book="./assets/images/book-covers/effective-engineer.svg">
+            <ul slot="book-info">
+              <li>Available</li>
+              <li class="book-title">The Effective Engineer</li>
+              <li>Edmond Lau - 2009</li>
+              <li>Motivational</li>
+              <li>
+                  <ul class="ratings" slot="book-info">
+                    <li>
+                      <p>Ratings: 4.0</p>
+                      <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span class="fa fa-users"></span> &nbsp; &nbsp;
+                        <span class="fa fa-heart-o"></span>
+                      </p>
+                      <p>31 &nbsp; &nbsp; 29</p>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </book-card-component>
+        </div>
+        <div slot="book13">
+          <book-card-component book="./assets/images/book-covers/effective-python.svg">
+            <ul slot="book-info">
+              <li>Available</li>
+              <li class="book-title">Effective Python</li>
+              <li>Edmond Lau - 2009</li>
+              <li>Motivational</li>
+              <li>
+                  <ul class="ratings" slot="book-info">
+                    <li>
+                      <p>Ratings: 4.0</p>
+                      <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span class="fa fa-users"></span> &nbsp; &nbsp;
+                        <span class="fa fa-heart-o"></span>
+                      </p>
+                      <p>31 &nbsp; &nbsp; 29</p>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </book-card-component>
+        </div>
+        <div slot="book14">
+          <book-card-component book="./assets/images/book-covers/big-magic.svg">
+            <ul slot="book-info">
+              <li>Available</li>
+              <li class="book-title">Big Magic</li>
+              <li>Edmond Lau - 2009</li>
+              <li>Motivational</li>
+              <li>
+                  <ul class="ratings" slot="book-info">
+                    <li>
+                      <p>Ratings: 4.0</p>
+                      <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span class="fa fa-users"></span> &nbsp; &nbsp;
+                        <span class="fa fa-heart-o"></span>
+                      </p>
+                      <p>31 &nbsp; &nbsp; 29</p>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </book-card-component>
+        </div>
+        <div slot="book15">
+          <book-card-component book="./assets/images/book-covers/big-magic.svg">
+            <ul slot="book-info">
+              <li>Available</li>
+              <li class="book-title">Big Magic</li>
+              <li>Edmond Lau - 2009</li>
+              <li>Motivational</li>
+              <li>
+                  <ul class="ratings" slot="book-info">
+                    <li>
+                      <p>Ratings: 4.0</p>
+                      <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span class="fa fa-users"></span> &nbsp; &nbsp;
+                        <span class="fa fa-heart-o"></span>
+                      </p>
+                      <p>31 &nbsp; &nbsp; 29</p>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </book-card-component>
+        </div>
+        <div slot="book16">
+          <book-card-component book="./assets/images/book-covers/effective-engineer.svg">
+            <ul slot="book-info">
+              <li>Available</li>
+              <li class="book-title">The Effective Engineer</li>
+              <li>Edmond Lau - 2009</li>
+              <li>Motivational</li>
+              <li><ul class="ratings" slot="book-info">
+                <li>
+                  <p>Ratings: 4.0</p>
+                  <p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="fa fa-users"></span> &nbsp; &nbsp;
+                    <span class="fa fa-heart-o"></span>
+                  </p>
+                  <p>31 &nbsp; &nbsp; 29</p>
+                </li>
+              </ul></li>
+            </ul>
+          </book-card-component>
+        </div>
+        <div slot="book17">
+          <book-card-component book="./assets/images/book-covers/effective-python.svg">
+            <ul slot="book-info">
+              <li>Available</li>
+              <li class="book-title">Effective Python</li>
+              <li>Edmond Lau - 2009</li>
+              <li>Motivational</li>
+              <li>
+                  <ul class="ratings" slot="book-info">
+                    <li>
+                      <p>Ratings: 4.0</p>
+                      <p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span class="fa fa-users"></span> &nbsp; &nbsp;
+                        <span class="fa fa-heart-o"></span>
+                      </p>
+                      <p>31 &nbsp; &nbsp; 29</p>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </book-card-component>
+        </div>
+  </app-component>
+  <!-- Main app Component end -->
+
+
+<!-- Sidebar Component -->
+<div class="sidebar-menu">
+  <sidebar-component 
+  badge="./assets/icons/badge.svg"
+  logo="./assets/images/logo.svg"
+  back="./assets/icons/back.svg">
+  </sidebar-component>
+</div>
+
+<!-- Sidebar component end -->
+
+  <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+
+  <!-- Load Custom Elements-->
+  <script type="module" src="./src/index.js"></script>
+  <script src="./assets/js/flickity.pkgd.min.js"></script>
+</body>
+</html>
